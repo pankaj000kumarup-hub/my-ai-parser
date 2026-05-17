@@ -20,7 +20,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="main-title">🚀 ExamParser AI</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">Advanced AI-Powered PDF Content Ingestion Platform. Convert your exam PDFs (Hindi, English, or Bilingual) into database-ready Excel/CSV sheets instantly.</div>', unsafe_allow_index=True)
+st.markdown('<div class="sub-title">Advanced AI-Powered PDF Content Ingestion Platform. Convert your exam PDFs (Hindi, English, or Bilingual) into database-ready Excel/CSV sheets instantly.</div>', unsafe_allow_html=True)
 
 # 2. Enterprise Console Sidebar Setup
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/2618/2618580.png", width=100)
@@ -51,7 +51,7 @@ if api_key:
         )
         
         st.write("")
-        st.markdown("<div class='feature-box'><b>💡 Enterprise Benefit:</b> Zero manual typing errors, 10x faster ingestion, and direct Firebase-compatible structural output.</div>", unsafe_allow_index=True)
+        st.markdown("<div class='feature-box'><b>💡 Enterprise Benefit:</b> Zero manual typing errors, 10x faster ingestion, and direct Firebase-compatible structural output.</div>", unsafe_allow_html=True)
 
     with col2:
         st.markdown("### 📁 2. Upload Source File")
@@ -97,7 +97,7 @@ if api_key:
                             prompt
                         ])
                         
-                        # Clean and validate response text (Fixed and simplified to avoid syntax error)
+                        # Clean and validate response text
                         clean_text = response.text.strip()
                         clean_text = clean_text.replace("```json", "").replace("```", "").strip()
                             
