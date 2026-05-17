@@ -17,9 +17,9 @@ st.markdown("""
     .sub-title { font-size: 18px; color: #4B5563; text-align: center; margin-bottom: 30px; }
     .feature-box { background-color: #F3F4F6; padding: 20px; border-radius: 10px; border-left: 5px solid #1E3A8A; }
     </style>
-""", unsafe_allow_index=True)
+""", unsafe_allow_html=True)
 
-st.markdown('<div class="main-title">🚀 ExamParser AI</div>', unsafe_allow_index=True)
+st.markdown('<div class="main-title">🚀 ExamParser AI</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">Advanced AI-Powered PDF Content Ingestion Platform. Convert your exam PDFs (Hindi, English, or Bilingual) into database-ready Excel/CSV sheets instantly.</div>', unsafe_allow_index=True)
 
 # 2. Enterprise Console Sidebar Setup
