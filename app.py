@@ -97,14 +97,9 @@ if api_key:
                             prompt
                         ])
                         
-                        # Clean and validate response text
+                        # Clean and validate response text (Fixed and simplified to avoid syntax error)
                         clean_text = response.text.strip()
-                        if clean_text.startswith("```json"):
-                            clean_text = clean_text.replace("
-```json", "").replace("```", "").strip()
-                        elif clean_text.startswith("```"):
-                            clean_text = clean_text.replace("
-```", "").strip()
+                        clean_text = clean_text.replace("```json", "").replace("```", "").strip()
                             
                         data_json = json.loads(clean_text)
                         df = pd.DataFrame(data_json)
